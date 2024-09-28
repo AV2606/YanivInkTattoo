@@ -6,19 +6,35 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "jenya": "npm i & npm run dev -- -p 2006",
+    "interface": "i18next-resources-for-ts interface -i ./public/locales/en -o ./@types/resources.d.ts"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.0.1",
+    "@mui/material": "^6.0.1",
+    "@vercel/speed-insights": "^1.0.12",
+    "dayjs": "^1.11.13",
+    "i18next": "^23.15.1",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^2.6.1",
+    "i18next-resources-for-ts": "^1.5.0",
+    "mathjs": "^13.1.1",
+    "next": "14.2.7",
+    "next-i18next": "^15.3.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.13"
+    "react-i18next": "^15.0.1",
+    "sass": "^1.77.8"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.13"
+    "eslint-config-next": "14.2.7",
+    "typescript": "^5"
   }
 }
