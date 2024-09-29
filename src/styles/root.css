@@ -1,0 +1,14 @@
+:root {
+	--paperBackground: #fff;
+	--primaryColor: #ededed;
+	--secondaryColor: #4d4d4d;
+	--button: #007bff;
+	--header: #1c3c54;
+	--accent: #b0bec5;
+	--themeColor: #c79a58;
+	--menu: #173b45;
+}
+
+body {
+	margin: 0;
+}
