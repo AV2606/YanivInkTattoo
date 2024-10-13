@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "jenya": "npm i & npm run dev -- -p 2006",
-    "interface": "i18next-resources-for-ts interface -i ./public/locales/en -o ./@types/resources.d.ts"
+    "interface": "i18next-resources-for-ts interface -i ./public/locales/he -o ./@types/resources.d.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

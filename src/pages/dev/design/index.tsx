@@ -5,7 +5,7 @@ type Props = {};
 
 const Index = (props: Props) => {
 	return (
-		<div>
+		<div style={{ color: CssVars.secondaryColor }}>
 			<h1>Design</h1>
 			<div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
 				<div
@@ -22,7 +22,12 @@ const Index = (props: Props) => {
 			<br />
 			<div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
 				<div
-					style={{ background: CssVars.primaryColor, width: "20px", height: "20px", display: "inline-block" }}
+					style={{
+						background: CssVars.secondaryColor,
+						width: "20px",
+						height: "20px",
+						display: "inline-block",
+					}}
 				></div>
 				Secondary Color
 			</div>

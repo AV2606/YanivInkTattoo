@@ -4,13 +4,34 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import IsraelFlag from "../../assets/icons/israelFlag.png";
 import YanivInkTattooLogo from "../../assets/logos/yaniv-inktattoo-high-resolution-logo-transparent.png";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import { CssVars } from "@/theme/vanilla/CssVars";
 
 type Props = {};
 
 const Topper = (props: Props) => {
+	const [language, setLanguage] = React.useState("he");
+	const [openMenu, setOpenMenu] = React.useState(false);
+
+	const onLanguageChange = () => {
+		console.log("Language changed from: ", language);
+	};
+
+	const onMenuOpen = () => {
+		setOpenMenu(!openMenu);
+		if (openMenu) {
+			console.log("Menu is open");
+		} else {
+			console.log("Menu is closed");
+		}
+	};
+
 	return (
 		<div className={classes.background}>
-			<MenuIcon />
+			<IconButton onClick={onMenuOpen}>
+				<MenuIcon style={{ color: CssVars.secondaryColor }} />
+			</IconButton>
 			<Image
 				src={YanivInkTattooLogo}
 				width={200}
@@ -18,12 +39,14 @@ const Topper = (props: Props) => {
 				alt="Yaniv Ink Tattoo Logo"
 			/>
 			<span>
-				<Image
-					src={IsraelFlag}
-					width={30}
-					height={30}
-					alt="language icon - hebrew"
-				/>
+				<IconButton onClick={onLanguageChange}>
+					<Image
+						src={IsraelFlag}
+						width={30}
+						height={30}
+						alt="language icon - hebrew"
+					/>
+				</IconButton>
 				&nbsp; &nbsp;
 			</span>
 		</div>

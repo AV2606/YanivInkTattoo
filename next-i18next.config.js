@@ -4,7 +4,7 @@ module.exports = {
         defaultLocale: 'he',
         locales: ['he', 'en'],
         fallbackLng: {
-            default: ['en'],
+            default: ['he'],
         },
     },
     /** To avoid issues when deploying to some paas (vercel...) */
