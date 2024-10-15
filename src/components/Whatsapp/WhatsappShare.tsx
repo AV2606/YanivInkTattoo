@@ -8,7 +8,7 @@ type Props = {};
 const WhatsappShare = (props: Props) => {
 	const { t, i18n } = useTranslation();
 	return (
-		<div>
+		<div style={{ position: "fixed", bottom: "15px", left: "15px", zIndex: 2 }}>
 			<Image
 				src={WhatsappIcon}
 				alt="Whatsapp Icon"

@@ -21,14 +21,6 @@ const Showroom = (props: Props) => {
 					borderRadius: "5px",
 				}}
 				next={(now) => {
-					console.log(
-						"next",
-						now,
-						carouselItems[now].image.width,
-						carouselItems[now].image.height,
-						"div by 500: ",
-						carouselItems[now].image.width / (carouselItems[now].image.height / 500)
-					);
 					setWidth(carouselItems[now].image.width / (carouselItems[now].image.height / 500) + 20);
 				}}
 			>
