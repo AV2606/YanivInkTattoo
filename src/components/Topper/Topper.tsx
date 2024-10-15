@@ -8,7 +8,9 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import { CssVars } from "@/theme/vanilla/CssVars";
 
-type Props = {};
+type Props = {
+	onMenuOpen: () => void;
+};
 
 const Topper = (props: Props) => {
 	const [language, setLanguage] = React.useState("he");
@@ -19,12 +21,7 @@ const Topper = (props: Props) => {
 	};
 
 	const onMenuOpen = () => {
-		setOpenMenu(!openMenu);
-		if (openMenu) {
-			console.log("Menu is open");
-		} else {
-			console.log("Menu is closed");
-		}
+		props.onMenuOpen();
 	};
 
 	return (
