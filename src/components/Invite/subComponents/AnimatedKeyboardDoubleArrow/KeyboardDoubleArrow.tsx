@@ -25,8 +25,6 @@ const AnimatedKeyboardDoubleArrow = (props: Props) => {
 		setAnim();
 	}, []);
 
-	console.log("animation", animation);
-
 	return (
 		<KeyboardDoubleArrowLeftIcon
 			{...props}
