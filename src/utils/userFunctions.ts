@@ -18,8 +18,6 @@ export function isNewUser() {
         return true;
     }
     const date = moment(time);
-    console.log('date', date);
     const diff = date.diff(moment(), 'days');
-    console.log('diff', diff);
-    return diff < -7;
+    return diff >= -7;
 }   

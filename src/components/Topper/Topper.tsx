@@ -7,6 +7,7 @@ import YanivInkTattooLogo from "../../assets/logos/yaniv-inktattoo-high-resoluti
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import { CssVars } from "@/theme/vanilla/CssVars";
+import { TopperHeight } from "@/utils/constants";
 
 type Props = {
 	onMenuOpen: () => void;
@@ -25,7 +26,10 @@ const Topper = (props: Props) => {
 	};
 
 	return (
-		<div className={classes.background}>
+		<div
+			className={classes.background}
+			style={{ height: TopperHeight }}
+		>
 			<IconButton onClick={onMenuOpen}>
 				<MenuIcon style={{ color: CssVars.secondaryColor }} />
 			</IconButton>

@@ -7,5 +7,11 @@
     "Whatsapp": {
         "interested": "היי אני אשמח לשמוע עוד.",
         "schedule": "היי, אשמח לקבוע פגישת ייעוץ."
+    },
+    "sidebar": {
+        "home": "בית",
+        "about": "הסיפור שלי",
+        "portfolio": "יצירות",
+        "contact": "יצירת קשר"
     }
 }

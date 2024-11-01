@@ -6,8 +6,14 @@ interface Resources {
     "click here": "לחץ כאן",
     "sendMessage": "שלח הודעה",
     "Whatsapp": {
-      "interested": "היי אני מעוניין לשמוע עוד.",
+      "interested": "היי אני אשמח לשמוע עוד.",
       "schedule": "היי, אשמח לקבוע פגישת ייעוץ."
+    },
+    "sidebar": {
+      "home": "בית",
+      "about": "הסיפור שלי",
+      "portfolio": "יצירות",
+      "contact": "יצירת קשר"
     }
   }
 }

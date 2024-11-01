@@ -11,7 +11,6 @@ export default function Home() {
 	return (
 		<>
 			<div className={classes.title}>{t("common:shortText")}</div>
-			<WhatsappShare />
 			<Showroom />
 			<Invite />
 		</>

@@ -1,0 +1,26 @@
+.link {
+    color: var(--secondaryColor);
+    text-decoration: none;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    width: 100%;
+
+    align-items: center;
+}
+
+.active {
+    color: var(--themeColor);
+}
+
+.linksWrapper {
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1cm;
+}
