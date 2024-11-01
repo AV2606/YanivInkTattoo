@@ -9,10 +9,10 @@
     width: 100%;
 
     align-items: center;
-}
 
-.active {
-    color: var(--themeColor);
+    &.active {
+        color: var(--themeColor);
+    }
 }
 
 .linksWrapper {
@@ -23,4 +23,24 @@
     justify-content: center;
     align-items: flex-start;
     gap: 1cm;
+}
+
+.drawer {
+    flex-shrink: 0;
+}
+
+.drawerTop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.iconButton {
+    color: var(--secondaryColor);
+}
+
+.divider {
+    width: calc(100% - 2px);
+    margin-top: 0;
 }

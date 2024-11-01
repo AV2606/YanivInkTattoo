@@ -30,9 +30,9 @@ const LeftSidebar = (props: Props) => {
 	return (
 		<Drawer
 			anchor="left"
+			className={classes.drawer}
 			sx={{
 				width: drawerWidth,
-				flexShrink: 0,
 				"& .MuiDrawer-paper": {
 					width: drawerWidth,
 					boxSizing: "border-box",
@@ -43,22 +43,19 @@ const LeftSidebar = (props: Props) => {
 			{...props}
 		>
 			<div
+				className={classes.drawerTop}
 				style={{
-					display: "flex",
-					justifyContent: "flex-end",
-					alignItems: "center",
-					paddingRight: "10px",
 					height: TopperHeight,
 				}}
 			>
 				<IconButton
 					onClick={() => props.onClose()}
-					sx={{ color: CssVars.secondaryColor }}
+					className={classes.iconButton}
 				>
 					<ArrowBackIcon />
 				</IconButton>
 			</div>
-			<hr style={{ width: "calc(100% - 2px)", marginTop: "0px" }} />
+			<hr className={classes.divider} />
 			<div className={classes.linksWrapper}>
 				{SideBarLinks.map((link) => {
 					return (
